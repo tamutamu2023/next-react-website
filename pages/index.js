@@ -23,11 +23,17 @@ function EachPost(){
 }
 
 export default function Posts(){
+  const props1 = { title: '記事のタイトル1', url: 'post1.html'}
+  const props2 = { title: '記事のタイトル2', url: 'posu2.html'}
   return(
     <section>
       <h2>おすすめ記事</h2>
-      <EachPost/>
-      <EachPost/>
+      <article>
+      <a href= "/blog/schedule"><h3>スケジュール管理と猫の理論</h3></a>
+      </article>
+      <article>
+      <a href= "/blog/misic"><h3>音楽が呼び起こすおいしいものの記憶</h3></a>
+    </article>
     </section>
   )
 }
