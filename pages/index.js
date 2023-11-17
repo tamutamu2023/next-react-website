@@ -1,3 +1,7 @@
+import Header from '../components/header'
+import Hero from '../components/hero'
+import footer from '../componets/footer'
+
 function Home(){
   return (
     <>
