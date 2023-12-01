@@ -1,3 +1,16 @@
-export default function header(){
-    return <header>HEADER</header>
+import Logo from 'components/logo'
+import Nav from 'components/nav'
+import styles from 'styles/header.module.css'
+
+
+export default function Header() {
+    return ( 
+        <header>
+            <div className={styles.flexContainer}>
+
+            </div>
+            <Logo boxOn />
+            <Nav />
+        </header>
+    )
 }
