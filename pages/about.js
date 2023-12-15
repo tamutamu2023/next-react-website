@@ -7,6 +7,16 @@ export default function About() {
     return (
         <Container>
             <Hero title="About" subtitle="About development activities" />
+            <figure>
+                <image
+                    src={eyecatch}
+                    alt=""
+                    layout="responsive"
+                    size="(min-width: 1152px) 1152px, 100vw"
+                    priority
+                    placeholder='blur'
+                />
+            </figure>
         <TwoColumn>
           <TwoColumnMain>
         <About>

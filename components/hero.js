@@ -1,5 +1,7 @@
 import styles from 'styles/hero.module.css'
-
+import Image from 'next/image'
+import cube from 'images/cube.jpg'
+    
 export default function Hero({ title, subtitle, image0n = false }) {
     return (
         <div>
@@ -8,7 +10,11 @@ export default function Hero({ title, subtitle, image0n = false }) {
                 <h1 className={styles.title}>{title}</h1>
                 <p className={styles.subtitle}>{subtitle}</p>
             </div>
-            {image0n && <figure> [画像]</figure>}
+            {image0n(
+                <figure>
+                    <Image src={cube} alt="" layout="responsive" />
+                </figure>
+            )}
         </div>
     )
 }
