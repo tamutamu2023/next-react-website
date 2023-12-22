@@ -10,9 +10,16 @@ export default function Hero({ title, subtitle, image0n = false }) {
                 <h1 className={styles.title}>{title}</h1>
                 <p className={styles.subtitle}>{subtitle}</p>
             </div>
-            {image0n(
-                <figure>
-                    <Image src={cube} alt="" layout="responsive" />
+            {image0n &&(
+                <figure className={styles.image}>
+                    <Image src={cube}
+                        alt=""
+                        layout="responsive"
+                        sizes="(min-width: 1152px) 576px, (min-width: 768px) 50vw, 100vw" 
+                        priority
+                        placeholder='blur'
+                    />
+                    
                 </figure>
             )}
         </div>
