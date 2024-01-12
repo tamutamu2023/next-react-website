@@ -1,4 +1,5 @@
 import Container from 'components/container'
+import Meta from 'next/head'
 import Hero from 'components/hero'
 import Contact from 'componenets/contact'
 import {TwoColumn,TwoColumnMain,TwoColumnSidebar} from'components/two-column'
@@ -6,6 +7,7 @@ import {TwoColumn,TwoColumnMain,TwoColumnSidebar} from'components/two-column'
 export default function About() {
     return (
         <Container>
+            <Meta pageTitle="アバウト" />
             <Hero title="About" subtitle="About development activities" />
             <figure>
                 <image
