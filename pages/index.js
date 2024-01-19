@@ -6,7 +6,10 @@ export default function Home() {
   return ( 
     <Container>
       <meta />
-    <Hero title="CUBE" subtitle="アウトプットしていくサイト" imageOn />
+      <Hero title="CUBE" subtitle="アウトプットしていくサイト" imageOn />
+      <meta property="og:title" content="CUBE" />
+      <meta name="description" content="アウトプットしていくサイト" />
+      <meta property="og:description" content="アウトプットしていくサイト" />.
     </Container>
   
     )

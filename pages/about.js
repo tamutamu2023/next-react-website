@@ -7,8 +7,15 @@ import {TwoColumn,TwoColumnMain,TwoColumnSidebar} from'components/two-column'
 export default function About() {
     return (
         <Container>
+            <Meta pageTitle="アバウト" pageDesc="About development activities"
+                pageimg={eyecatch.src}
+                pageimgW={eyecatch.width}
+                pageimgH={eyecatch.height} />
             <Meta pageTitle="アバウト" />
             <Hero title="About" subtitle="About development activities" />
+            <meta property="og:title" content="アバウト|CUBE" />
+            <meta name="description" content="アウトプットしていくサイト" />
+            <meta property="og:descrition" content="about development activites"/>
             <figure>
                 <image
                     src={eyecatch}
