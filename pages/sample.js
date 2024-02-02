@@ -1,4 +1,4 @@
-import styles from 'styles/sample.moduls.css'
+import styles from 'styles/.moduls.css'
 
 export default function Sample() {
     return (

@@ -1,29 +1,31 @@
-.spaceBetween{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+.spaceBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 
 .sideBySide {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 768px) {
-    .sideBySide{
-        flex-direction: row;
-        justify-content: space-between;
-    }
+  .sideBySide {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
-.sideBySidecenter {
-    composes: sideBySide;
-    align-items: center;
-    text-align: center;
+.sideBySideCenter {
+  composes: sideBySide;
+  align-items: center;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
-    .sideBySideCenter {
-        text-align: left;
-    }
+  .sideBySideCenter {
+    text-align: left;
+  }
 }
