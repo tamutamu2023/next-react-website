@@ -16,12 +16,12 @@ export default function pagination({
                 <li className={styles.prev}>
 
                     <Link href={prevUrl}>
-                        <a className={styles.iconText}>
+                        {styles.iconText}
 
                             <FontAwesomeIcon icon={faChevronLeft} color="var(--gray-25)" />
                             <span>{prevText}</span>
 
-                        </a>
+                        
                     </Link>
                 </li>
             )}
@@ -33,7 +33,7 @@ export default function pagination({
 
 
 
-                        
+
                     </link>
               </li>
             
